@@ -1,0 +1,60 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  .imgContainer {
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .reactions {
+    margin: 1.5rem 1rem;
+
+    display: flex;
+    align-items: center;
+
+    & > * {
+      display: flex;
+      align-items: center;
+      margin-right: 2.5rem;
+      & > * {
+        &:first-child {
+          color: var(--yellow);
+          font-size: 2.3rem;
+          margin-right: 0.6rem;
+        }
+      }
+      span {
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+    }
+  }
+  .heading {
+    margin-left: 1rem;
+
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--black);
+  }
+  .text {
+    margin: 1rem;
+    font-size: 1.4rem;
+    color: var(--black);
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--yellow);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+    margin: 1rem;
+  }
+}
