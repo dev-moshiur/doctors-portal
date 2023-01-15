@@ -1,0 +1,129 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 4rem;
+    .heading{
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: var(--black);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+        span {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--yellow);
+        }
+
+    }
+    .underline{
+        height: 0.7rem;
+      width: 4rem;
+      background: var(--yellow);
+      position: relative;
+      border-radius: 0.3rem;
+      margin: 0.5rem 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 3.6rem;
+        display: block;
+        height: 0.3rem;
+        top: 0.2rem;
+        width: 5rem;
+        background: orange;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 3.6rem;
+        display: block;
+        height: 0.3rem;
+        top: 0.2rem;
+        width: 5rem;
+        background: orange;
+      }
+
+    }
+    .container{
+        display: flex;
+        width: 94%;
+        margin: 2rem auto;
+        justify-content: center;
+        column-gap: 2rem;
+        max-width: 80rem;
+        row-gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        .imgContainer{
+            flex: 1 1 30rem;
+
+            img{
+                width: 100%;
+
+            }
+        }
+        form{
+            flex: 1 1 20rem;
+            display: flex;
+            
+            flex-direction: column;
+            justify-content: space-between;
+            .field{
+                
+                display: flex;
+                flex-direction: column;
+                
+                label{
+                    
+                    
+                    color: var(--black);
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    margin-bottom: 0.2rem;
+                    transition: 0.4s;
+
+                }
+                input{
+                    color: var(--black);
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    padding: 0.1rem 0.9rem;
+                    outline: none;
+                    margin-bottom: 0.2rem;
+                    border: 1px solid rgb(182, 172, 172);
+                    
+
+                }
+                
+            }
+            .send{
+                cursor: pointer;
+                background: var(--yellow);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0.5rem;
+                font-size: 1.3rem;
+                padding: 0.2rem 0;
+                column-gap: 0.6rem;
+                span{
+                    
+
+                }
+                .icon{
+                    font-size: 1.2rem;
+                    transform: rotate(-45deg) translateY(-2px);
+
+                }
+            }
+
+        }
+
+    }
+}

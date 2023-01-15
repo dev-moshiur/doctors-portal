@@ -8,6 +8,7 @@ import LatestNews from "./components/latestNews/LatestNews";
 
 import Service from "./components/service/Service";
 import Search from "./components/search/Search";
+import Contact from './components/contact/Contact'
 import { useState } from "react";
 function App() {
   const [search, setsearch] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <Service />
       <Doctors />
       <LatestNews />
+      <Contact/>
     </div>
   );
 }
