@@ -1,5 +1,6 @@
 import React from "react";
 import "./topBar.scss";
+import logo from './doclogo.png'
 
 import {
   Business,
@@ -39,13 +40,15 @@ export default function TopBar() {
         </div>
       </div>
       <div className="bottom">
-        <div className="logo">Sheba</div>
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
         <div className="contactCell">
           <Email />
           <span>Email Us</span>
           <span>dev.moshiurr@gmail.com</span>
         </div>
-        <div className="contactCell">
+        <div className="contactCell dn">
           <Call />
           <span>Call Us</span>
           <span>01885355627</span>

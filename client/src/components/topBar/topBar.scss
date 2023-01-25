@@ -74,6 +74,10 @@
       justify-content: center;
       align-items: center;
       color: var(--black);
+      img{
+        height: 100%;
+        
+      }
     }
     .contactCell {
       background: var(--bg);
@@ -126,6 +130,14 @@
           }
         }
       }
+      .dn{
+        display: none;
+      }
     }
+  }
+}
+@media screen and (max-width: 550px) {
+  .dn{
+    display: none;
   }
 }

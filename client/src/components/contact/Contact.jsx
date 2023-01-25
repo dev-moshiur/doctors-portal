@@ -3,7 +3,7 @@ import './contact.scss'
 import contactImage from './images (2).jpg'
 import {Send} from '@material-ui/icons'
 export default function Contact() {
-  return <div className='contact'>
+  return <div className='contact' id='contact'>
     <div className="heading">
         <span>Contact</span> Us
     </div>

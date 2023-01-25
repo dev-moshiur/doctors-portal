@@ -9,11 +9,10 @@ export default function NavBar({ setsearch }) {
     <div className="navBar">
       <div className="links">
         <a href="#home">Home </a>
-        <a href="#home">Features</a>
         <a href="#services">Services</a>
-        <a href="#team">Team</a>
-        <a href="#blog">Blog</a>
-        <a href="#home">Pages</a>
+        <a href="#team">Doctors</a>
+        <a href="#blog">News</a>
+        <a href="#contact">Contact</a>
       </div>
       <div className="icons">
         <span onClick={() => setsearch((presearch) => !presearch)}>
